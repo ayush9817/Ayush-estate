@@ -9,7 +9,7 @@ import path from 'path';
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO)
+  .connect("mongodb+srv://ayush:ayush@cluster0.lbmjktq.mongodb.net/mern-estate?retryWrites=true&w=majority")
   .then(() => {
     console.log('Connected to MongoDB!');
   })
